@@ -799,3 +799,6 @@ logging.files:
 
 # Set to true to log messages in json format.
 #logging.json: false
+
+apm-server.rum.enabled: true
+apm-server.rum.allow_origins: ['*']
