@@ -13,6 +13,7 @@ elasticsearch apm-server kibana
 
 ```sh
 wget https://raw.githubusercontent.com/yidinghan/eak/master/docker-compose.yml
+chmod 644 apm-server.reference.yml
 docker-compose up -d
 ```
 
