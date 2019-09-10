@@ -35,6 +35,8 @@ services:
     image: docker.elastic.co/apm/apm-server:6.5.1
     ports:
       - 8200:8200
+    volumes:
+      - ./apm-server.reference.yml:/usr/share/apm-server/apm-server.yml
     environment:
       - output.elasticsearch.hosts=['http://elasticsearch:9200']
       - apm-server.host="0.0.0.0:8200"
